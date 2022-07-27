@@ -11,8 +11,12 @@
         <SliderTestimonial />
     </section>
 
-    <section id="specials">
+    <section id="specials" class="my-2">
         <TwoColumn />
+    </section>
+
+    <section id="banner">
+        <Banner />
     </section>
 
   </main>
@@ -21,12 +25,14 @@
 <script>
 import SliderTestimonial from './SliderTestimonial.vue';
 import TwoColumn from './TwoColumn.vue';
+import Banner from './Banner.vue';
 
 export default {
     name: 'Main',
     components: {
         SliderTestimonial,
         TwoColumn,
+        Banner,
 }
 
 }
