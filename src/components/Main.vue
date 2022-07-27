@@ -26,6 +26,14 @@
         <TeamCard />
     </section>
 
+    <section id="partners" class="py-5 d-flex justify-content-center">
+            <LogoPartner />
+            <LogoPartner />
+            <LogoPartner />
+            <LogoPartner />
+            <LogoPartner />
+    </section>
+
   </main>
 </template>
 
@@ -34,6 +42,7 @@ import SliderTestimonial from './SliderTestimonial.vue';
 import TwoColumn from './TwoColumn.vue';
 import Banner from './Banner.vue';
 import TeamCard from './TeamCard.vue';
+import LogoPartner from './LogoPartner.vue';
 
 export default {
     name: 'Main',
@@ -42,6 +51,7 @@ export default {
         TwoColumn,
         Banner,
         TeamCard,
+        LogoPartner,
 }
 
 }
@@ -59,6 +69,10 @@ main{
 
     #testimonial_slider{
         padding: 10px 0;
+        background-color: $testimonial_bg;
+    }
+
+    #partners{
         background-color: $testimonial_bg;
     }
 }
