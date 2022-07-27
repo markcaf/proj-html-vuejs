@@ -11,16 +11,22 @@
         <SliderTestimonial />
     </section>
 
+    <section id="specials">
+        <TwoColumn />
+    </section>
+
   </main>
 </template>
 
 <script>
 import SliderTestimonial from './SliderTestimonial.vue';
+import TwoColumn from './TwoColumn.vue';
 
 export default {
     name: 'Main',
     components: {
         SliderTestimonial,
+        TwoColumn,
 }
 
 }
