@@ -7,15 +7,20 @@
         <img src="../assets/img/h3-img-1.jpg" alt="">
     </section>
 
+    <section id="testimonial_slider">
+        <SliderTestimonial />
+    </section>
+
   </main>
 </template>
 
 <script>
+import SliderTestimonial from './SliderTestimonial.vue';
 
 export default {
     name: 'Main',
     components: {
-
+        SliderTestimonial,
 }
 
 }
@@ -29,6 +34,11 @@ main{
             width: calc((100% / 4) - 8px);
             margin: 8px 0;
         }
+    }
+
+    #testimonial_slider{
+        padding: 10px 0;
+        background-color: $testimonial_bg;
     }
 }
 </style>
