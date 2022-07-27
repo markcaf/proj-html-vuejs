@@ -42,12 +42,18 @@
             </div>
         </div>
     </div>
+    <Slider />
   </header>
 </template>
 
 <script>
+import Slider from './Slider.vue';
+
 export default {
     name: 'Header',
+    components: {
+        Slider,
+    }
 
 }
 </script>
