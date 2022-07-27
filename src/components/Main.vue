@@ -19,6 +19,13 @@
         <Banner />
     </section>
 
+    <section id="team" class="d-flex mb-2">
+        <TeamCard />
+        <TeamCard />
+        <TeamCard />
+        <TeamCard />
+    </section>
+
   </main>
 </template>
 
@@ -26,6 +33,7 @@
 import SliderTestimonial from './SliderTestimonial.vue';
 import TwoColumn from './TwoColumn.vue';
 import Banner from './Banner.vue';
+import TeamCard from './TeamCard.vue';
 
 export default {
     name: 'Main',
@@ -33,6 +41,7 @@ export default {
         SliderTestimonial,
         TwoColumn,
         Banner,
+        TeamCard,
 }
 
 }
