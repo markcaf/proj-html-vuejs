@@ -1,10 +1,7 @@
 <template>
   <main>
-    <section id="image_cards" class="d-flex justify-content-between">
-        <img src="../assets/img/h3-img-1.jpg" alt="">
-        <img src="../assets/img/h3-img-1.jpg" alt="">
-        <img src="../assets/img/h3-img-1.jpg" alt="">
-        <img src="../assets/img/h3-img-1.jpg" alt="">
+    <section id="image_cards" class="d-flex justify-content-between gap-2">
+        <imageCard v-for="(image, index) in imageCards" :key="index" :imgUrl="image.src"/>
     </section>
 
     <section id="testimonial_slider">
@@ -50,6 +47,7 @@
 </template>
 
 <script>
+import imageCard from './main_components/imageCard.vue';
 import SliderTestimonial from './main_components/SliderTestimonial.vue';
 import TwoColumn from './main_components/TwoColumn.vue';
 import Banner from './main_components/Banner.vue';
@@ -62,6 +60,7 @@ import BookTable from './main_components/BookTable.vue';
 export default {
     name: 'Main',
     components: {
+        imageCard,
         SliderTestimonial,
         TwoColumn,
         Banner,
@@ -70,6 +69,28 @@ export default {
         PizzaList,
         TwoColumnEvent,
         BookTable,
+    },
+
+    data: function(){
+        return{
+            imageCards: [
+                {
+                    src: require('@/assets/img/h3-img-1.jpg'),
+                },
+
+                {
+                    src: require('@/assets/img/h3-img-2.jpg'),
+                },
+
+                {
+                    src: require('@/assets/img/h3-img-3.jpg'),
+                },
+
+                {
+                    src: require('@/assets/img/h3-img-4.jpg'),
+                },
+            ],
+        }
     }
 
 }
@@ -78,12 +99,12 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
 main{
-    #image_cards{
-        img{
-            width: calc((100% / 4) - 8px);
-            margin: 8px 0;
-        }
-    }
+    // #image_cards{
+    //     img{
+    //         width: calc((100% / 4) - 8px);
+    //         margin: 8px 0;
+    //     }
+    // }
 
     #testimonial_slider{
         padding: 10px 0;
