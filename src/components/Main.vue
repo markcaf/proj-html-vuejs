@@ -1,7 +1,7 @@
 <template>
   <main>
     <section id="image_cards" class="d-flex justify-content-between gap-2">
-        <imageCard v-for="(image, index) in imageCards" :key="index" 
+        <imageCard v-for="image in imageCards" :key="image.id" 
         :imgUrl="image.src"/>
     </section>
 
@@ -71,18 +71,22 @@ export default {
         return{
             imageCards: [
                 {
+                    id: '1',
                     src: require('@/assets/img/h3-img-1.jpg'),
                 },
 
                 {
+                    id: '2',
                     src: require('@/assets/img/h3-img-2.jpg'),
                 },
 
                 {
+                    id: '3',
                     src: require('@/assets/img/h3-img-3.jpg'),
                 },
 
                 {
+                    id: '4',
                     src: require('@/assets/img/h3-img-4.jpg'),
                 },
             ],
