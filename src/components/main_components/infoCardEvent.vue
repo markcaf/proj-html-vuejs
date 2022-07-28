@@ -2,11 +2,11 @@
     <div class="infoCard">
         <div class="text_box d-flex gap-3">
             <div class="date">
-                <div class="day">02</div>
-                <div class="month text-white text-center">Nov</div>
+                <div class="day">{{ day }}</div>
+                <div class="month text-white text-center">{{ month }}</div>
             </div>
             <div class="info">
-                <div class="name text-white text-uppercase pt-1 mb-2">Traditional neapolitan pies in kyoto pizza mercato</div>
+                <div class="name text-white text-uppercase pt-1 mb-2">{{ name }}</div>
                 <div class="description">
                     <i class="fa-solid fa-location-dot"></i>
                     204 E. Pizzetta Tommaso</div>
@@ -18,6 +18,12 @@
 <script>
 export default {
     name: 'infoCardEvent',
+
+    props: {
+        day: String,
+        month: String,
+        name: String,
+    }
 
 }
 </script>
