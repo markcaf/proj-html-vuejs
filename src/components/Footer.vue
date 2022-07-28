@@ -7,29 +7,11 @@
                   <div class="menu">
                     <h5>Find our restaurants</h5>
                     <ul class="list-unstyled">
-                      <li>
-                        1614 E. Bell Rd #104<br>
-                        Salerno, AZ 85022<br>
-                        (602) 867-1010
-                      </li>
-                      
-                      <li>
-                        1614 E. Bell Rd #104<br>
-                        Salerno, AZ 85022<br>
-                        (602) 867-1010
-                      </li>
-
-                      <li>
-                        1614 E. Bell Rd #104<br>
-                        Salerno, AZ 85022<br>
-                        (602) 867-1010
-                      </li>
-
-                      <li>
-                        1614 E. Bell Rd #104<br>
-                        Salerno, AZ 85022<br>
-                        (602) 867-1010
-                      </li>
+                      <Restaurant v-for="(restaurant, index) in restaurants" :key="index"
+                      :address="restaurant.address"
+                      :city="restaurant.city"
+                      :tel="restaurant.tel"
+                      />
                     </ul>
                   </div>
 
@@ -85,8 +67,42 @@
 </template>
 
 <script>
+import Restaurant from './footer_components/Restaurant.vue';
 export default {
     name: 'Footer',
+    components: {
+      Restaurant,
+    },
+
+    data: function(){
+      return{
+        restaurants: [
+          {
+            address: '1614 E. Bell Rd #104',
+            city: 'Salerno, AZ 85022',
+            tel: '(602) 867-1010',
+          },
+
+          {
+            address: '204 E. Pizzetta Tommaso',
+            city: 'Sorrento, AZ 85022',
+            tel: '(358) 867-1010',
+          },
+
+          {
+            address: 'Vale Puglia 54',
+            city: 'Torre Del Greco AZ 85022',
+            tel: '(359) 867-1010',
+          },
+
+          {
+            address: 'Corso Italia',
+            city: 'Naples, AZ 85022',
+            tel: '(989) 867-1010',
+          },
+        ],
+      }
+    },
 
 }
 </script>
@@ -125,7 +141,7 @@ export default {
             }
 
             &.hours{
-              margin: 0 50px;
+              margin: 0 30px;
               
               .day{
                 text-transform: uppercase;
@@ -145,12 +161,13 @@ export default {
           }
 
           .text{
-            width: 20%;
+            width: 30%;
             font-size: 25px;
           }
         }
 
         .copyright{
+          margin-bottom: 40px;
 
           .text{
             color: $brown_text;
