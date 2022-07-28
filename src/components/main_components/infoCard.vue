@@ -1,10 +1,10 @@
 <template>
     <div class="infoCard">
         <div class="text_box d-flex gap-3">
-            <div class="price">$10</div>
+            <div class="price">${{ price }}</div>
             <div class="info">
-                <div class="name">COMBO PICCOLO</div>
-                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent ut aliquam dui.</div>
+                <div class="name text-uppercase">{{ name }}</div>
+                <div class="description">{{ description }}</div>
             </div>
         </div>
     </div>
@@ -13,6 +13,12 @@
 <script>
 export default {
     name: 'infoCard',
+
+    props: {
+        price: Number,
+        name: String,
+        description: String,
+    },
 
 }
 </script>
