@@ -11,9 +11,11 @@
                     <h2 class="title text-uppercase mb-2">SPECIALS*</h2>
                     <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent ut.</div>
                 </div>
-                <infoCard />
-                <infoCard />
-                <infoCard />
+                <infoCard v-for="(card, index) in cards" :key="index"
+                :price="card.price"
+                :name="card.name"
+                :description="card.description" 
+                />
             </div>
         </div>
     </div>
@@ -26,6 +28,28 @@ export default {
     name: 'TwoColumn',
     components: {
         infoCard,
+    },
+
+    data: function(){
+        return{
+            cards: [
+                {
+                    price: '10',
+                    name: 'Combo piccolo',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent ut aliquam dui.',
+                },
+                {
+                    price: '20',
+                    name: 'Combo mezzo',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent ut aliquam dui.',
+                },
+                {
+                    price: '30',
+                    name: 'Combo grande',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent ut aliquam dui.',
+                },
+            ],
+        }
     }
 }
 </script>
