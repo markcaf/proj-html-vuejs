@@ -1,6 +1,6 @@
 <template>
   <div class="team_card">
-    <img src="../../assets/img/h1-team-2a.jpg" alt="">
+    <img :src="imgUrl" alt="">
   </div>
 </template>
 
@@ -8,11 +8,17 @@
 export default {
     name: 'TeamCard',
 
+    props: {
+      id: String,
+      imgUrl: String,
+    },
+
 }
 </script>
 
 <style lang="scss" scoped>
     .team_card{
+        width: calc(100% / 4);
         img{
             width: 100%;
         }
