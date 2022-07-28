@@ -6,7 +6,7 @@
 
     <div class="content text-center">
         <!-- <img src="../assets/img/h3-rev-img-6.png" alt=""> -->
-        <img :src="slides[activeImageIndex].image" :alt="Pizza" />
+        <img :src="slides[activeImageIndex].image" alt="Pizza" />
     </div>
 
     <div class="next-button" @click="nextPicture">
