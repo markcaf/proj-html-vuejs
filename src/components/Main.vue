@@ -23,11 +23,8 @@
     </section>
 
     <section id="partners" class="py-5 d-flex justify-content-center">
-        <LogoPartner />
-        <LogoPartner />
-        <LogoPartner />
-        <LogoPartner />
-        <LogoPartner />
+        <LogoPartner v-for="partner in partners" :key="partner.id"
+        :imgUrl="partner.src" />
     </section>
 
     <section id="pizza_list" class="py-5">
@@ -101,11 +98,34 @@ export default {
                 },
                 {
                     id: '3',
-                    src: require('@/assets/img/h1-team-3a.jpg'),
+                    src: require('@/assets/img/h1-team-4a.jpg'),
                 },
                 {
                     id: '4',
-                    src: require('@/assets/img/h1-team-4a.jpg'),
+                    src: require('@/assets/img/h1-team-3a.jpg'),
+                },
+            ],
+
+            partners: [
+                {
+                    id: '1',
+                    src: require('@/assets/img/h1-clients-img-1.png'),
+                },
+                {
+                    id: '2',
+                    src: require('@/assets/img/h1-clients-img-2.png'),
+                },
+                {
+                    id: '3',
+                    src: require('@/assets/img/h1-clients-img-3.png'),
+                },
+                {
+                    id: '4',
+                    src: require('@/assets/img/h1-clients-img-4.png'),
+                },
+                {
+                    id: '5',
+                    src: require('@/assets/img/h1-clients-img-5.png'),
                 },
             ],
         }
