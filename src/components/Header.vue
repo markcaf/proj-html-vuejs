@@ -10,9 +10,8 @@
 
             <div class="col text-end">
                 <ul class="menu_sx list-unstyled">
-                    <li>Home</li>
-                    <li>Pages</li>
-                    <li>Menu</li>
+                    <li v-for="(menu, index) in menuLeft" :key="index">{{ menu }}</li>
+
                 </ul>
             </div>
 
@@ -22,9 +21,7 @@
 
             <div class="col text-start">
                 <ul class="menu_dx list-unstyled">
-                    <li>Event</li>
-                    <li>Blog</li>
-                    <li>Landing</li>
+                    <li v-for="(menu, index) in menuRight" :key="index">{{ menu }}</li>
                 </ul>
             </div>
 
@@ -53,6 +50,13 @@ export default {
     name: 'Header',
     components: {
         Slider,
+    },
+
+    data: function(){
+        return{
+            menuLeft: [ 'Home', 'Pages', 'Menu'],
+            menuRight: [ 'Event', 'Blog', 'Landing' ],
+        }
     }
 
 }
@@ -62,7 +66,8 @@ export default {
 @import "../styles/variables.scss";
 
     header{
-        background-color: $dark_bg;
+        background-image: url(../assets/img/h3-rev-bckgrnd-ing.jpg);
+        background-size: cover;
 
         .red_button{
             color: white;
