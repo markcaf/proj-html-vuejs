@@ -38,6 +38,10 @@
         <PizzaList />
     </section>
 
+    <section id="event">
+        <TwoColumnEvent />
+    </section>
+
   </main>
 </template>
 
@@ -48,6 +52,7 @@ import Banner from './Banner.vue';
 import TeamCard from './TeamCard.vue';
 import LogoPartner from './LogoPartner.vue';
 import PizzaList from './PizzaList.vue';
+import TwoColumnEvent from './TwoColumnEvent.vue';
 
 export default {
     name: 'Main',
@@ -58,7 +63,8 @@ export default {
         TeamCard,
         LogoPartner,
         PizzaList,
-}
+        TwoColumnEvent,
+    }
 
 }
 </script>
