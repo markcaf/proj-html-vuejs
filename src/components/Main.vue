@@ -19,7 +19,10 @@
 
     <section id="team" class="d-flex mb-2">
         <TeamCard v-for="card in teamCards" :key="card.id"
-        :imgUrl="card.src" />
+        :imgUrl="card.src" 
+        :name="card.name"
+        :role="card.role"
+        />
     </section>
 
     <section id="partners" class="py-5 d-flex justify-content-center">
@@ -94,18 +97,26 @@ export default {
             teamCards: [
                 {
                     id: '1',
+                    name: 'Mario Pizzella',
+                    role: 'Head Chef',
                     src: require('@/assets/img/h1-team-1a-700x700.jpg'),
                 },
                 {
                     id: '2',
+                    name: 'Margherita Olio',
+                    role: 'Co-Chef',
                     src: require('@/assets/img/h1-team-2a.jpg'),
                 },
                 {
                     id: '3',
+                    name: 'Frank Bailey',
+                    role: 'Kitchen Porter',
                     src: require('@/assets/img/h1-team-4a.jpg'),
                 },
                 {
                     id: '4',
+                    name: 'Anna Origano',
+                    role: 'Sous Chef',
                     src: require('@/assets/img/h1-team-3a.jpg'),
                 },
             ],
