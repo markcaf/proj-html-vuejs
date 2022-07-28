@@ -73,6 +73,7 @@ export default {
             width: 150px;
             font-size: 13px;
             letter-spacing: 2px;
+            cursor: pointer;
         }
 
         img{

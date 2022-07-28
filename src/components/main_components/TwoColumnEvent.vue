@@ -33,19 +33,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../styles/variables.scss";
 
     .inner_wrap{
         height: 700px;
 
         .right{
-            background-image: url(../assets/img/h3-img-5a.jpg);
+            background-image: url(../../assets/img/h3-img-5a.jpg);
             background-size: cover;
             background-position: center;
         }
 
         .left{
-            background-image: url(../assets/img/h3-img-6.jpg);
+            background-image: url(../../assets/img/h3-img-6.jpg);
             .content{
                 padding-left: 25%;
 

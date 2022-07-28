@@ -14,10 +14,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../styles/variables.scss";
     .banner{
         height: 600px;
-        background-image: url(../assets/img/h3-background-img.jpg);
+        background-image: url(../../assets/img/h3-background-img.jpg);
         background-size: cover;
         background-position: top;
 

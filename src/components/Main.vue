@@ -50,14 +50,14 @@
 </template>
 
 <script>
-import SliderTestimonial from './SliderTestimonial.vue';
-import TwoColumn from './TwoColumn.vue';
-import Banner from './Banner.vue';
-import TeamCard from './TeamCard.vue';
-import LogoPartner from './LogoPartner.vue';
-import PizzaList from './PizzaList.vue';
-import TwoColumnEvent from './TwoColumnEvent.vue';
-import BookTable from './BookTable.vue';
+import SliderTestimonial from './main_components/SliderTestimonial.vue';
+import TwoColumn from './main_components/TwoColumn.vue';
+import Banner from './main_components/Banner.vue';
+import TeamCard from './main_components/TeamCard.vue';
+import LogoPartner from './main_components/LogoPartner.vue';
+import PizzaList from './main_components/PizzaList.vue';
+import TwoColumnEvent from './main_components/TwoColumnEvent.vue';
+import BookTable from './main_components/BookTable.vue';
 
 export default {
     name: 'Main',

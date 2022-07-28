@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="row inner_wrap">
         <div class="col left d-flex justify-content-center align-items-center">
-            <img src="../assets/img/h1-img-7n.png" alt="">
+            <img src="../../assets/img/h1-img-7n.png" alt="">
         </div>
 
         <div class="col right d-flex align-items-center">
@@ -31,13 +31,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../styles/variables.scss";
 
     .inner_wrap{
         height: 700px;
 
         .left{
-            background-image: url(../assets/img/h1-img-4.jpg);
+            background-image: url(../../assets/img/h1-img-4.jpg);
             background-size: cover;
             background-position: center;
         }

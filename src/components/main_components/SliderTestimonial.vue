@@ -15,13 +15,13 @@
 
         <div class="navigation">
             <span class="dot active">
-                <img src="../assets/svg/svg-5.svg" width="8" alt="">
+                <img src="../../assets/svg/svg-5.svg" width="8" alt="">
             </span>
             <span class="dot">
-                <img src="../assets/svg/svg-5.svg" width="8" alt="">
+                <img src="../../assets/svg/svg-5.svg" width="8" alt="">
             </span>
             <span class="dot">
-                <img src="../assets/svg/svg-5.svg" width="8" alt="">
+                <img src="../../assets/svg/svg-5.svg" width="8" alt="">
             </span>
         </div>
     </div>
@@ -40,11 +40,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../styles/variables.scss";
 
     section{
         height: 300px;
-        background-image: url(../assets/img/h3-testimonials-bckgrnd.jpg);
+        background-image: url(../../assets/img/h3-testimonials-bckgrnd.jpg);
         background-color: $testimonial_bg;
         background-size: cover;
         background-position: center;

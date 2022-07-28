@@ -1,6 +1,6 @@
 <template>
   <div class="team_card">
-    <img src="../assets/img/h1-team-2a.jpg" alt="">
+    <img src="../../assets/img/h1-team-2a.jpg" alt="">
   </div>
 </template>
 
