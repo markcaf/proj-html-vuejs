@@ -53,8 +53,8 @@ export default {
       display: none;
       
       .fa-eye{
-      font-size: 30px;
-      padding: 10px;
+      font-size: 20px;
+      padding: 20px;
       border-radius: 50%;
       background-color: $red_bg;
       color: white;
