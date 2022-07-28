@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
     .logo_partner{
-        width: 180px;
+        width: 200px;
         img{
             width: 100%;
         }
