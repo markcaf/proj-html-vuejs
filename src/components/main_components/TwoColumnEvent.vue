@@ -7,11 +7,11 @@
                     <div class="subtitle mb-2">Made with love</div>
                     <h2 class="title text-uppercase mb-2 text-white">DELISH PIZZA DEALS</h2>
                 </div>
-                <infoCardEvent />
-                <div class="separator"></div>
-                <infoCardEvent />
-                <div class="separator"></div>
-                <infoCardEvent />
+                <infoCardEvent v-for="(event, index) in events" :key="index" 
+                :day="event.day"
+                :month="event.month"
+                :name="event.name"
+                />
             </div>
         </div>
 
@@ -28,6 +28,30 @@ export default {
     name: 'TwoColumnEvent',
     components: {
         infoCardEvent,
+    },
+
+    data: function(){
+        return{
+            events: [
+                {
+                    day: '02',
+                    month: 'Nov',
+                    name: 'Traditional neapolitan pies in kyoto pizza mercato',
+                },
+
+                {
+                    day: '03',
+                    month: 'Nov',
+                    name: 'Terarazza patio dining space opening this weekend',
+                },
+
+                {
+                    day: '05',
+                    month: 'Nov',
+                    name: 'Sienna private dining room with stéphane brunn',
+                },
+            ],
+        }
     }
 }
 </script>
