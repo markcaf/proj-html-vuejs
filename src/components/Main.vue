@@ -1,7 +1,8 @@
 <template>
   <main>
     <section id="image_cards" class="d-flex justify-content-between gap-2">
-        <imageCard v-for="(image, index) in imageCards" :key="index" :imgUrl="image.src"/>
+        <imageCard v-for="(image, index) in imageCards" :key="index" 
+        :imgUrl="image.src"/>
     </section>
 
     <section id="testimonial_slider">
@@ -17,10 +18,8 @@
     </section>
 
     <section id="team" class="d-flex mb-2">
-        <TeamCard />
-        <TeamCard />
-        <TeamCard />
-        <TeamCard />
+        <TeamCard v-for="card in teamCards" :key="card.id"
+        :imgUrl="card.src" />
     </section>
 
     <section id="partners" class="py-5 d-flex justify-content-center">
@@ -88,6 +87,25 @@ export default {
 
                 {
                     src: require('@/assets/img/h3-img-4.jpg'),
+                },
+            ],
+
+            teamCards: [
+                {
+                    id: '1',
+                    src: require('@/assets/img/h1-team-1a-700x700.jpg'),
+                },
+                {
+                    id: '2',
+                    src: require('@/assets/img/h1-team-2a.jpg'),
+                },
+                {
+                    id: '3',
+                    src: require('@/assets/img/h1-team-3a.jpg'),
+                },
+                {
+                    id: '4',
+                    src: require('@/assets/img/h1-team-4a.jpg'),
                 },
             ],
         }
