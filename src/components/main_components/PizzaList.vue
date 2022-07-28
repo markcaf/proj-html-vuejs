@@ -13,12 +13,10 @@
     </div>
 
     <div class="wrapper_cards my-5 d-flex justify-content-between">
-        <PizzaCard />
-        <PizzaCard />
-        <PizzaCard />
-        <PizzaCard />
-        <PizzaCard />
-        <PizzaCard />
+        <PizzaCard v-for="pizza in pizzas" :key="pizza.id"
+        :imgUrl="pizza.src"
+        :name="pizza.name"
+        :price="pizza.price" />
     </div>
 
   </section>
@@ -31,6 +29,54 @@ export default {
     name: 'PizzaList',
     components: {
         PizzaCard,
+    },
+
+    data: function(){
+        return{
+            pizzas: [
+                {
+                    id: '1',
+                    src: require('@/assets/img/h3-product-img-1a-100x100.png'),
+                    name: 'Bismarck',
+                    price: '30',
+                },
+
+                {
+                    id: '2',
+                    src: require('@/assets/img/h3-product-img-2a-150x150.png'),
+                    name: 'Fiori di zucca',
+                    price: '50',
+                },
+
+                {
+                    id: '3',
+                    src: require('@/assets/img/h3-product-img-3a-150x150.png'),
+                    name: 'Campagnola',
+                    price: '50',
+                },
+
+                {
+                    id: '4',
+                    src: require('@/assets/img/h3-product-img-4a-150x150.png'),
+                    name: 'Pizza tartufata',
+                    price: '45',
+                },
+
+                {
+                    id: '5',
+                    src: require('@/assets/img/h3-product-img-5a-150x150.png'),
+                    name: 'Francescana',
+                    price: '25',
+                },
+
+                {
+                    id: '6',
+                    src: require('@/assets/img/h3-product-img-6a-100x100.png'),
+                    name: 'Valdostana',
+                    price: '55',
+                },
+            ],
+        }
     }
 
 }
