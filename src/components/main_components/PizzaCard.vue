@@ -1,14 +1,20 @@
 <template>
   <div class="pizzacard text-center">
-    <img src="../../assets/img/h3-product-img-3a-150x150.png" alt="">
-    <h5 class="title text-uppercase mt-4 mb-2">Nome Pizza</h5>
-    <div class="price">$50.00</div>
+    <img :src="imgUrl" :alt="name">
+    <h5 class="title text-uppercase mt-4 mb-2">{{ name }}</h5>
+    <div class="price">${{ price }}</div>
   </div>
 </template>
 
 <script>
 export default {
     name: 'PizzaCard',
+
+    props: {
+        imgUrl: String,
+        name: String,
+        price: Number,
+    }
 
 }
 </script>
