@@ -13,7 +13,7 @@ export default {
     props: {
         imgUrl: String,
         name: String,
-        price: Number,
+        price: String,
     }
 
 }

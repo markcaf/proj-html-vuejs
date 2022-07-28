@@ -15,7 +15,7 @@ export default {
     name: 'infoCard',
 
     props: {
-        price: Number,
+        price: String,
         name: String,
         description: String,
     },
