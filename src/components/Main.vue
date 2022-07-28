@@ -38,8 +38,12 @@
         <PizzaList />
     </section>
 
-    <section id="event">
+    <section id="event" class="mb-2">
         <TwoColumnEvent />
+    </section>
+
+    <section id="book_a_table" class="py-5 mb-2 d-flex justify-content-center">
+        <BookTable />
     </section>
 
   </main>
@@ -53,6 +57,7 @@ import TeamCard from './TeamCard.vue';
 import LogoPartner from './LogoPartner.vue';
 import PizzaList from './PizzaList.vue';
 import TwoColumnEvent from './TwoColumnEvent.vue';
+import BookTable from './BookTable.vue';
 
 export default {
     name: 'Main',
@@ -64,6 +69,7 @@ export default {
         LogoPartner,
         PizzaList,
         TwoColumnEvent,
+        BookTable,
     }
 
 }
@@ -86,6 +92,12 @@ main{
 
     #partners{
         background-color: $testimonial_bg;
+    }
+
+    #book_a_table{
+        background-image: url(../assets/img/h3-background-img-3.jpg);
+        background-position: center;
+        background-size: cover;
     }
 }
 </style>
